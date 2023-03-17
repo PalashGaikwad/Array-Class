@@ -1,5 +1,6 @@
 #include <iostream>
 #include "array.hpp"
+#include "string.hpp"
 
 void showcase_overloaded_operators() {
      // OVERLOADED [] OPERATOR
@@ -107,7 +108,7 @@ int main(int argc, char const *argv[])
 {
     // CONSTRUCTORS 
     Array<int,5> arr_1 {2,4,6,8,10}; // First template parameter is the datatype of the Array object, The second template parameter refers to the size of the array, which by default is 0 and to initialize the elements you have to put them in through a initializer list.
-    //Array<char[]> arr = {"sadjnasjdna"}; // Datatype is int, size is 0, array is empty
+    Array<int,0> arr; // Datatype is int, size is 0, array is empty
     Array<std::string,10> arr_2 {"YOU","ARE","GREAT","AT","C++"}; // Datatype is std::string, size is 10, Array is {"YOU","ARE","GREAT","AT","CODING","","","","",""}
     
     std::cout << "BEGINNING OF OVERLOADED OPERATORS\n\n";
@@ -123,3 +124,4 @@ int main(int argc, char const *argv[])
     
     return 0; 
 }
+
