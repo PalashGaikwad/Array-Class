@@ -62,6 +62,7 @@ class OUT_OF_RANGE_EXCEPTION : public std::exception {
 // Array class.
 template<class T, size_t Size = 0>
 class Array { 
+  
   protected:
 
     int size {}; // Refers to the maximum size of the current array.
