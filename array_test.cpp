@@ -1,6 +1,5 @@
 #include <iostream>
 #include "array.hpp"
-#include "string.hpp"
 
 void showcase_overloaded_operators() {
      // OVERLOADED [] OPERATOR
@@ -111,6 +110,7 @@ int main(int argc, char const *argv[])
     Array<int,0> arr; // Datatype is int, size is 0, array is empty
     Array<std::string,10> arr_2 {"YOU","ARE","GREAT","AT","C++"}; // Datatype is std::string, size is 10, Array is {"YOU","ARE","GREAT","AT","C++","","","","",""}
     Array<int,5> arr_3 {arr_1.slice<5>(0,2)};
+    arr_3.display();
     std::cout << "BEGINNING OF OVERLOADED OPERATORS\n\n";
     // OVERLOADED OPERATORS 
     showcase_overloaded_operators();
